@@ -146,7 +146,7 @@ async def info(interaction: discord.Interaction, klucz: str):
         f"**HWID:** `{data['hwid'] or 'brak'}`\n"
         f"**Użyty:** {data['used_at'] or 'jeszcze nie'}"
     )
-    await interaction.response.send_message(tekst, ephemeral=True)]
+    await interaction.response.send_message(tekst, ephemeral=True)
 # ==================== API DLA CLIENTA ====================
 app = FastAPI()
 app.add_middleware(
