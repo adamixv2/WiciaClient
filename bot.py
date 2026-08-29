@@ -122,7 +122,8 @@ async def revoke(interaction: discord.Interaction, klucz: str):
 import asyncio
 from fastapi import FastAPI, Header
 from fastapi.middleware.cors import CORSMiddleware
-import uvicorn@bot.tree.command(name="info", description="Informacje o kluczu")
+import uvicorn
+@bot.tree.command(name="info", description="Informacje o kluczu")
 @app_commands.describe(klucz="Klucz do sprawdzenia")
 async def info(interaction: discord.Interaction, klucz: str):
     if not is_owner(interaction):
