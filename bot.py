@@ -8,7 +8,7 @@ import os
 from datetime import datetime
 
 # ==================== KONFIGURACJA ====================
-TOKEN = "os.getenv"
+TOKEN = "MTU0MzI1OTEyOTY2NDExMDY1Mg.GAp_vj.A1gAQdGxCkjmPaU-vq-_32Gb2HflEl02H8QtIY"
 OWNER_ID = 1042355571178868847
 KEYS_FILE = "keys.json"
 # ======================================================
