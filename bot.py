@@ -17,6 +17,14 @@ OWNER_ID = 1042355571178868847
 KEYS_FILE = "keys.json"
 # ======================================================
 
+if not TOKEN:
+    raise SystemExit(
+        "❌ Brak DISCORD_TOKEN!\n"
+        "Ustaw zmienną środowiskową:\n"
+        "  export DISCORD_TOKEN=twoj_token\n"
+        "lub dodaj ją w panelu hostingu (Variables / Environment)."
+    )
+
 intents = discord.Intents.default()
 bot = commands.Bot(command_prefix="!", intents=intents)
 
